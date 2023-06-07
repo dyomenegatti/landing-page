@@ -10,3 +10,32 @@
     --secondary: #FDCD2D;
     --tertiary: #F96444;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.menu__navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.menu__navbar li {
+    margin-right: 2.5rem; 
+}
+
+.menu__navbar li a {
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.menu__navbar li a:hover {
+    color: var(--tertiary);
+    font-weight: 600;
+}
