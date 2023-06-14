@@ -13,11 +13,23 @@
     --text: #555;
 }
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+}
+
+.navbar i {
+    display: none;
 }
 
 .menu__navbar ul {
@@ -43,16 +55,17 @@
 }
 
 .section {
-    margin: 0 3rem;
+    padding: 1.5rem;
     display: grid;
     grid-template-rows: 6fr;
     gap: 70px;
 }
 
-.info, .timeline, .privacy {
+.section__page {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .title__info {
@@ -60,7 +73,7 @@
     flex-direction: column;
 }
 
-.subtitle__info, .subtitle__timeline, .subtitle__privacy, .subtitle__footer {
+.subtitle__page {
     color: var(--secondary);
     font-weight: 700;
     text-transform: uppercase;
@@ -92,7 +105,7 @@
     width: 80%;
 }
 
-.btn__info, .btn__timeline, .btn__privacy, .bt__footer {
+.btn__page {
     background-color: var(--primary);
     color: var(--white);
     padding: 12px;
@@ -109,11 +122,11 @@ button i {
     margin-left: 10px;
 }
 
-.btn__info i {
+.btn__page i {
     margin-right: 10px;
 }
 
-.bt__footer {
+.btn__page {
     margin-bottom: 1.8rem;
 }
 
@@ -239,4 +252,33 @@ footer {
 
 .icones__footer i:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .section__page {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section__page img {
+        display: none;
+    }
+
+    .menu__navbar {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .navbar img {
+        display: none;
+    }
 }
