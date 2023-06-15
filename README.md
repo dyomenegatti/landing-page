@@ -1,4 +1,4 @@
-# **Header - HTML & CSS**
+# **Landing Page - HTML & CSS**
 
 This is a simple and responsive page made with HTML and CSS.
 
